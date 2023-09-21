@@ -6,6 +6,7 @@
     --highlight-color: #167BF7;
     --font-family: 'Inter', sans-serif;
     --disclaimer-color: #C0C0C0;
+    --alternative-text-color: #F9F9F9;
 }
 
 *{
@@ -58,6 +59,13 @@ body{
     font-size: 1rem;
 }
 
+.container-text{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--alternative-text-color);
+}
+
 .main-section-btn{
     padding: 1em 0;
     background-color: var(--highlight-color);
@@ -76,5 +84,60 @@ body{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 0.8rem;
+    color: var(--disclaimer-color);
+}
+
+.list{
+    list-style: none;
+}
+
+.list--horizontal{
+    display: flex;
+    justify-content: center;
+}
+
+.devices-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.devices-list-p{
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.devices-list{
+    flex-wrap: wrap;
+}
+
+.footer{
+    padding: 9rem 6rem 6rem 6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-list{
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-link{
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.footer-logo{
+    width: 4.75rem;
+}
+
+.footer-text{
+    font-family: var(--font-family);
+    font-size: 0.8.rem;
     color: var(--disclaimer-color);
 }
